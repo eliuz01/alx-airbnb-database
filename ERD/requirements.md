@@ -1,3 +1,7 @@
+**The Entity-Relationship Diagram (ERD) for the Airbnb Clone backend** 
+
+It illustrates the core data entities and their interconnections within the system. The main entities include User, Property, Booking, Payment, Review, and Message. Each entity is designed with relevant attributes such as user_id in the User table or property_id in the Property table, most of which are uniquely identified using UUIDs. Relationships are clearly mapped: a User can have multiple Properties (as a host), make multiple Bookings (as a guest), and send or receive Messages. Bookings link guests to properties and may generate Payments; while technically modeled as a one-to-many relationship, the application logic typically enforces a one-to-one association. Similarly, Reviews connect Users and Properties, enforcing integrity by tying reviews to specific hosts or guests. The ERD provides a clear, structured view of how data flows and relates within the backend system, ensuring consistency and scalability in database operations
+
 **Database Specification - AirBnB**
 **Entities and Attributes**
 **User**
