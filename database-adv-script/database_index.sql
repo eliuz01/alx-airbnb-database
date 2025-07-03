@@ -17,3 +17,9 @@ CREATE INDEX idx_bookings_booking_id ON bookings(booking_id);
 -- Indexes on reviews table
 CREATE INDEX idx_reviews_property_id ON reviews(property_id);
 CREATE INDEX idx_reviews_user_id ON reviews(user_id);
+
+--Measure Performance Using EXPLAIN ANALYZE
+EXPLAIN ANALYZE
+SELECT *
+FROM bookings
+WHERE user_id = 'uuid-1';
